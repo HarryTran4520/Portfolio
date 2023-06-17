@@ -7,11 +7,11 @@ const darkTheme = {
     mode: "dark",
     primary: {
       main: "#003A6A",
-      light: "#8DBDD8"
+      variant: "#8DBDD8"
     },
     secondary: {
       main: "#006A65",
-      light: "#00C5BC"
+      variant: "#00C5BC"
     },
     text: {
       primary: "#FFFFFF",

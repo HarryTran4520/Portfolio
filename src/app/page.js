@@ -1,9 +1,15 @@
 'use client'
 import React from 'react';
-import Intro from '../../components/home/Intro';
+import IntroMyself from '../../components/home/IntroMyself';
+import IntroDemoTabs from '../../components/home/IntroDemoTabs';
+import IntroBackground from '../../components/home/IntroBackground';
 
 export default function Home() {
   return (
-    <Intro/>
+    <>
+      <IntroMyself/>
+      <IntroDemoTabs/>
+      <IntroBackground/>
+    </>
   )
 }

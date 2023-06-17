@@ -9,22 +9,20 @@ export default function Header() {
   const router = useRouter();
   
   return (
-    <AppBar sx={{padding: "10px 16px", backgroundImage: "none", position: "static"}} enableColorOnDark>
+    <AppBar sx={{padding: "10px 76px", backgroundImage: "none", position: "static"}} enableColorOnDark>
       <Toolbar sx={{display: "flex", justifyContent: "space-between"}}>
         {/* Avatar and Name */}
         <Box sx={{display: "flex", alignItems: "center", gap: "10px"}}>
-          <Image src="/avatar.jpg" width={50} height={50} style={{borderRadius: "50%"}}/>
+          <Image alt='Harry avatar' src="/avatar.jpg" width={50} height={50} style={{borderRadius: "50%"}}/>
           <Typography sx={{fontSize: "24px", fontWeight:"500"}}>Harry Tran</Typography>
         </Box>
         {/* Navigation */}
         <Tabs
           value={pathname}
-          textColor='secondaryLight'
-          indicatorColor='secondaryLight'
           sx={{
             "& .MuiTab-root": {fontSize: "16px", fontWeight: "400", padding: "5px 16px",},
-            "& .Mui-selected": {color: "secondary.light"},
-            "& .MuiTabs-indicator": {backgroundColor: "secondary.light"},
+            "& .MuiTab-root.Mui-selected": {color: "secondary.variant"},
+            "& .MuiTabs-indicator": {backgroundColor: "secondary.variant"},
           }}
         >
           <Tab label="HOME" value="/" onClick={() => router.push("/")}/>
