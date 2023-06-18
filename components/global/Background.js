@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import 'particles.js';
 
-export default function IntroBackground() {
+export default function BackGround() {
   useEffect(() => {
     particlesJS("star-background", {
       "particles": {

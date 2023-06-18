@@ -2,14 +2,14 @@
 import React from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
-import { AppBar, Toolbar, Typography, Tabs, Tab, Box } from '@mui/material';
+import { Toolbar, Typography, Tabs, Tab, Box } from '@mui/material';
 
 export default function Header() {
   const pathname = usePathname();
   const router = useRouter();
   
   return (
-    <AppBar sx={{padding: "10px 76px", backgroundImage: "none", position: "static"}} enableColorOnDark>
+    <Box sx={{padding: "10px 76px", backgroundImage: "none", background: "none", position: "sticky"}}>
       <Toolbar sx={{display: "flex", justifyContent: "space-between"}}>
         {/* Avatar and Name */}
         <Box sx={{display: "flex", alignItems: "center", gap: "10px"}}>
@@ -30,6 +30,6 @@ export default function Header() {
           <Tab label="CONTACT" value="/contact" onClick={() => router.push("/contact")}/>
         </Tabs>
       </Toolbar>
-    </AppBar>
+    </Box>
   )
 }

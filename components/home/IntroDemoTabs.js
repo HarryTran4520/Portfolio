@@ -30,16 +30,6 @@ export default function IntroDemoTabs() {
        title={"Map & GPS"}
        description={"Need to track location, find routes, or whatever it is you think you might do with a map, I can build it for you!"}
       />
-      <DemoTab
-       Icon={PaletteIcon}
-       title={"Theme Management"}
-       description={"Most modern products have a minimum of 2 themes: Light and Dark. And a great theme management system should do the job!"}
-      />
-      <DemoTab
-       Icon={MapGpsIcon}
-       title={"Map & GPS"}
-       description={"Need to track location, find routes, or whatever it is you think you might do with a map, I can build it for you!"}
-      />
     </Box>
   )
 }

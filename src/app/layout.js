@@ -10,6 +10,7 @@ import { CacheProvider } from '@emotion/react';
 // Global Layout Components
 import Header from '../../components/global/Header';
 import PageWrapper from '../../components/global/PageWrapper';
+import BackGround from '../../components/global/Background';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         <CacheProvider value={clientSideEmotionCache}>
           <ThemeProvider theme={createTheme(darkTheme)}>
             <CssBaseline/>
+            <BackGround/>
             <Header/>
             <PageWrapper>
               {children}

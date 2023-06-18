@@ -5,7 +5,7 @@ import { Box, Typography, Link } from '@mui/material';
 export default function IntroMyself() {
   const router = useRouter();
   return (
-    <Box sx={{display: "flex", flexDirection: "column", rowGap: "20px", maxWidth: "900px"}}>
+    <Box sx={{display: "flex", flexDirection: "column", rowGap: "15px", maxWidth: "900px"}}>
       <Typography sx={{fontSize: "24px", fontWeight: "500", color: "primary.variant"}}>
         Hi, my name is
       </Typography>
